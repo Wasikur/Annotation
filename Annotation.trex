@@ -7,7 +7,7 @@
     <author name="Team USEReady" email="contact@useready.com" organization="USEReady" website="https://www.useready.com"/>
     <min-api-version>1.0</min-api-version>
     <source-location>
-      <url>https://localhost:3000/home/index.html</url> 
+      <url>https://annotation.vercel.app/home/index.html</url> 
     </source-location>
         <icon></icon>
         <context-menu>
