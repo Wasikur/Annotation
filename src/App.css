@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+body {
+  padding: 0;
+  background-color: #fff;
+ 
+}
+h4{
+  margin: 7px 0;
+}
+.show{display: block;}
+.hide{display: none;}
+.arrow-down{background-image: url(../src/images/Arrow_accordian-down.svg);background-repeat: no-repeat;background-position: 44px 9px;}
+.arrow-up{background-image: url(../src/images/Arrow_accordian.svg);background-repeat: no-repeat;background-position: 40px 9px;}
+.all_comment_section h2{font-size: 16px;margin-top: 15px;}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+ ::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+  background: transparent; 
+}
+
+/* width */
+.comments-section ::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.comments-section ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.comments-section  ::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.comments-section ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.subcomment-button-section img{cursor: pointer;}

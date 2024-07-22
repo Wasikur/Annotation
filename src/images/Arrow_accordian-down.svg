@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5" width="8" height="5">
+	<title>Arrow_accordian-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #707070;stroke-linecap:round;stroke-linejoin:round } 
+	</style>
+	<g id="Arrow">
+		<path id="Arrow-2" class="shp0" d="M7.29 1.57L4.36 4.5L1.43 1.57" />
+	</g>
+</svg>
