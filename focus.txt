@@ -1,0 +1,16 @@
+JWT Token Generation:
+
+1. Verify that JWT tokens are generated correctly on the server-side upon successful authentication (login).
+Ensure that tokens include necessary information (like user ID, roles, expiration) and are securely signed using a secret key or key pair.
+Token Handling in Frontend:
+
+2. Implement logic in your frontend (React) application to store tokens securely (e.g., in local storage or a secure cookie).
+Ensure tokens are attached to API requests where authorization is required (typically in the Authorization header as Bearer <token>).
+Backend Authorization:
+
+3. On the backend (Spring Boot), configure security filters or middleware to validate incoming JWT tokens.
+Ensure endpoints requiring authentication check the validity and permissions encoded in the token.
+Testing and Debugging:
+
+4. Test the authentication flow thoroughly, including login, token issuance, token refresh (if applicable), and API access.
+Use tools like browser developer tools (Network tab for API requests, Console for errors) and backend logs to debug any issues encountered during authentication.

@@ -1,0 +1,19 @@
+updated-
+npm update webpack webpack-cli
+
+
+Key Points:
+1. added .env-
+REACT_APP_CHAIN_CERT=./SSL/usereadychain.crt
+REACT_APP_KEY_CERT=./SSL/useready.key
+REACT_APP_CERT_CERT=./SSL/useready.crt
+HTTPS=true
+
+2. Updated package.json:
+
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+
+3. Added cross-env to handle the OpenSSL issue by setting the NODE_OPTIONS environment variable.- npm install cross-env
+Modified the start script to use cross-env.
+
