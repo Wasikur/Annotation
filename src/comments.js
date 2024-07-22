@@ -99,22 +99,22 @@ export default function Comment(props) {
   /*axios start*/
   const api = axios.create({
     // baseURL: window.location.origin,
-    // baseURL: window.location.origin + "/annotation/annotate/comments/", // for server
-    baseURL: "http://localhost:8080/annotate/comments/", // for local testing
+    baseURL: window.location.origin + "/annotation/annotate/comments/", // for server
+    // baseURL: "http://localhost:8080/annotate/comments/", // for local testing
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
-      // Authorization: `Bearer ${userSessionInfo.token}`,
+      Authorization: `Bearer ${userSessionInfo.token}`,
     },
   });
   // Updated part- This ensures that the header is set correctly whenever the token updates. Token is updated dynamically.
-  useEffect(() => {
-    if (userSessionInfo.token) {
-      api.defaults.headers.common[
-        "Authorization"
-      ] = `Bearer ${userSessionInfo.token}`;
-    }
-  }, [userSessionInfo.token]);
+  // useEffect(() => {
+  //   if (userSessionInfo.token) {
+  //     api.defaults.headers.common[
+  //       "Authorization"
+  //     ] = `Bearer ${userSessionInfo.token}`;
+  //   }
+  // }, [userSessionInfo.token]);
 
   const requestOptions = {
     comments: comment,
