@@ -99,8 +99,8 @@ export default function Comment(props) {
   /*axios start*/
   const api = axios.create({
     // baseURL: window.location.origin,
-    baseURL: window.location.origin + "/annotation/annotate/comments/", // for server
-    // baseURL: "http://localhost:8080/annotate/comments/", // for local testing
+    // baseURL: window.location.origin + "/annotation/annotate/comments/", // for server
+    baseURL: "http://localhost:8080/annotate/comments/", // for local testing
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
