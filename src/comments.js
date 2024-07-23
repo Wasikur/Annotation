@@ -102,7 +102,7 @@ export default function Comment(props) {
     // baseURL: window.location.origin + "/annotation/annotate/comments/", // for server
     baseURL: "http://localhost:8080/annotate/comments/", // for local testing
     headers: {
-      Accept: "application/json",
+      // Accept: "application/json",
       "Content-Type": "application/json",
       Authorization: `Bearer ${userSessionInfo.token}`,
     },
